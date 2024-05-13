@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.cdnfonts.com/css/aquatico" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+    <link rel="stylesheet" href="layout.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <div class="navbar">
+        <div>
+          <a href="../index.html" id="home-button">
+            <img id="home-image" src="../images/Group 3.png"> 
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+  <main>
+    <div class="content">
+      <h1>Development and Version Control</h1>
+      <h2>W and M Page Exercise</h2>
+      <p>
+        These website pages were created to practice HTML and CSS lessons. We were provided with two pictures and tasked with recreating them without access to the source code.
+      </p>
+      <img id="w-image" src="../images/w.png">
+      <img id="m-image" src="../images/m.png">
+      <br>
+      <img id="wvoorbeeld-image" src="../images/w voorbeeld.jpg">
+      <img id="mvoorbeeld-image" src="../images/m voorbeeld.jpg">
+      <p>
+        The M page was simpler, featuring a split layout achieved using CSS classes which code I found on
+         <a href="https://www.w3schools.com/howto/howto_css_split_screen.asp" target="_blank">w3schools</a>.
+         I used a linear gradient to partially color the M container and added text boxes with Lorem Ipsum content.
+      </p>
+      <p>
+        The W page had more elements.
+        I started by adding a gradient background and a white strip on the left side for text.
+        Then, I positioned a black textbox in the bottom right corner and another black box along the border of the white strip.
+         Finally, I placed a menu button using a PNG image.
+      </p>
+      <hr class="divider">
+      <h2>Portfolio Website</h2>
+      <img id="homepage-image" src="../images/Screenshot 2024-04-05 142610.png">
+      <p>
+        My portfolio website is based on the Figma design covered in the Iterative Design outcome. Here's a breakdown of my approach and the elements I used:
+      </p>
+      <ul>
+        <li>Vertical Split Page: Created using CSS skew functions to replicate the vertical split page layout.</li>
+        <li>Gradient Fade Effect: Achieved with CSS gradients for a smooth transition between sections.</li>
+        <li>Graphics Integration: Imported graphical elements from Figma, ensuring color consistency.</li>
+        <li>Paint Clouds: Added dynamic visual elements to the background for contrast.</li>
+        <li>Navbar Implementation: Integrated a navigation bar with a home button and a menu button for easy access to different pages.</li>
+        <li>Hamburger Menu Animation: Implemented using CSS only, following this
+        <a href="https://www.youtube.com/watch?v=dAIVbLrAb_U&list=WL&index=89&ab_channel=WebDevSimplified " target="_blank">tutorial</a>.</li>
+        <li>Semantic HTML Tags: Utilized for better code structure and accessibility, with ongoing improvements.</li>
+      </ul>
+      <p>
+        Currently, I'm working on improving the menu sidebar and structuring the content pages.
+      </p>
+      <hr class="divider">
+      <h2>Run Marco JS</h2>
+      <p>
+        In the first JavaScript programming lesson, we played a game called <a href="https://media.codemax.net/jsrunmarco/?stage-0" target="_blank">Runmarco</a>. The objective is to advance along a path by executing commands. Initially, we used stickers for commands and later wrote JavaScript code.
+      </p>
+      <p>
+        The code I structured below was able maneuver the character through all the levels from 0 to 8:
+      </p>
+      <img id="runmarcojs-image" src="../images/Screenshot 2024-04-05 142953.png">
+      <pre>
+while (true) {
+    if (look('front') == 'clear') {
+        step();
+    } else if (look('front') == 'bush' ) {
+        jump();
+    } else if (look('right') == 'clear') {
+        turn('right');
+    } else if (look('left') == 'clear') {
+        turn('left');
+    } else {
+        break;
+    }
+}
+      </pre>
+      <p>
+        The code checks if the path ahead is clear and moves forward. If obstructed by a bush, it jumps. If neither, it checks for clear paths to the right and left, adjusting direction accordingly. It terminates execution when the level is completed.
+      </p>
+    </div>
+  </main>
+
+
+ 
+    
+  <label class="hamburger-menu">
+    <input type="checkbox" />
+  </label>
+  
+  <aside class="sidebar">
+    <nav>
+      <a href="InteractiveMedia.html" class="outcomes long">
+        <p>interactive Media Prodcuts</p>
+    </a>
+    <a href="DevelopmentVersion.html" class="outcomes long">
+      <p>Development And Version Control</p>
+  </a>
+  <a href="IterativeDesign.html" class="outcomes">
+    <p>Iterative design</p>
+  </a>
+  <a href="ProfessionalStandard.html" class="outcomes long">
+    <p>Professional Standard</p>
+  </a>
+  <a href="PersonalLeadership.html" class="outcomes">
+    <p>Personal Leadership</p>
+  </a>
+    </nav>
+  </aside>
+
+
+  
+
+  <div class="background"> 
+    <div class="splitright"> </div>
+    <div class="black_line"> </div>
+    <div class="white_line"> </div>
+  </div>
+
+</body>
+</html>
